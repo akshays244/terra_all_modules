@@ -8,6 +8,7 @@ resource "google_compute_instance" "vm" {
       image = "debian-cloud/debian-11"
     }
   }
+  tags = [ "foo" , "bar" ]
 
   network_interface {
     # A default network is created for all GCP projects
